@@ -17,21 +17,21 @@ The pipeline consists of the following steps:
 ## Components and Configuration
 
 ### **Apache Airflow**
-Apache Airflow is used to manage and orchestrate the entire pipeline. The DAG (Directed Acyclic Graph) includes tasks for each step of the process.
+Apache Airflow is used to manage and orchestrate the entire pipeline. The DAG includes tasks for each step of the process.
 
 ![Airflow Main Dashboard](images/Airflow_main.PNG)
 
 ---
 
 ### **MinIO**
-MinIO is used as the object storage solution to store the training and test datasets, as well as the output predictions.
+MinIO is used as the object storage solution.
 
 ![MinIO Object Storage](images/MINIO.PNG)
 
 ---
 
 ### **Apache Spark**
-Apache Spark is used to process data and train the recommendation model using the ALS (Alternating Least Squares) algorithm. The Spark cluster is deployed with one master and three worker nodes.
+Apache Spark is used to process data and train the recommendation model using the ALS algorithm. The Spark cluster is deployed with one master and three worker nodes.
 
 ![Apache Spark Master Dashboard](images/SPARK.PNG)
 
@@ -44,7 +44,9 @@ Apache Spark is used to process data and train the recommendation model using th
 2. The following tools installed locally:
    - `curl` for downloading the dataset.
    - Python 3.x.
-3. Ubuntu (if you are using Windows[https://learn.microsoft.com/en-us/windows/wsl/install] use wsl --install in command line)
+3. Linux (Ubuntu was used for this project).
+
+*If you are using Windows, use `wsl --install` in the command line. More information can be found at [WSL Installation Guide](https://learn.microsoft.com/en-us/windows/wsl/install).*
 
 ### Steps to Run
 
@@ -77,7 +79,7 @@ Apache Spark is used to process data and train the recommendation model using th
 
 5. **Trigger the pipeline**:
    - Navigate to the **Airflow Dashboard** and enable the `movielens_pipeline`.
-   - Trigger the DAG by clicking the play button.
+   - Trigger the DAG.
 
 6. **Monitor the pipeline**:
    - View task status and logs in the Airflow dashboard.
