@@ -1,0 +1,630 @@
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.13 [0m[38;5;2mINFO [0m ==> 
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.13 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami spark container[0m
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.13 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.13 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.13 [0m[38;5;2mINFO [0m ==> 
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.14 [0m[38;5;2mINFO [0m ==> ** Starting Spark setup **
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.16 [0m[38;5;2mINFO [0m ==> Generating Spark configuration file...
+spark-worker-3-1  | find: '/docker-entrypoint-initdb.d/': No such file or directory
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.17 [0m[38;5;2mINFO [0m ==> No custom scripts in /docker-entrypoint-initdb.d
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.17 [0m[38;5;2mINFO [0m ==> ** Spark setup finished! **
+spark-worker-3-1  | 
+spark-worker-3-1  | [38;5;6mspark [38;5;5m23:14:29.19 [0m[38;5;2mINFO [0m ==> ** Starting Spark in worker mode **
+spark-worker-3-1  | starting org.apache.spark.deploy.worker.Worker, logging to /opt/bitnami/spark/logs/spark--org.apache.spark.deploy.worker.Worker-1-ca7c50966b60.out
+spark-worker-3-1  | Spark Command: /opt/bitnami/java/bin/java -cp /opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://spark-master:7077
+spark-worker-3-1  | ========================================
+spark-worker-3-1  | Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+spark-worker-3-1  | 24/12/09 23:14:31 INFO Worker: Started daemon with process name: 36@ca7c50966b60
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for TERM
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for HUP
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for INT
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls to: spark
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls to: spark
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls groups to: 
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls groups to: 
+spark-worker-3-1  | 24/12/09 23:14:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+spark-worker-3-1  | 24/12/09 23:14:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark-worker-3-1  | 24/12/09 23:14:32 INFO Utils: Successfully started service 'sparkWorker' on port 38897.
+spark-worker-3-1  | 24/12/09 23:14:32 INFO Worker: Worker decommissioning not enabled.
+spark-worker-3-1  | 24/12/09 23:14:32 INFO Worker: Starting Spark worker 172.19.0.6:38897 with 12 cores, 2.0 GiB RAM
+spark-worker-3-1  | 24/12/09 23:14:32 INFO Worker: Running Spark version 3.5.0
+spark-worker-3-1  | 24/12/09 23:14:32 INFO Worker: Spark home: /opt/bitnami/spark
+spark-worker-3-1  | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-3-1  | 24/12/09 23:14:32 INFO ResourceUtils: No custom resources configured for spark.worker.
+spark-worker-3-1  | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-3-1  | 24/12/09 23:14:32 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+spark-worker-3-1     | 24/12/09 23:14:32 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+spark-worker-3-1     | 24/12/09 23:14:32 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://ca7c50966b60:8081
+spark-worker-3-1     | 24/12/09 23:14:32 INFO Worker: Connecting to master spark-master:7077...
+spark-worker-3-1     | 24/12/09 23:14:32 INFO TransportClientFactory: Successfully created connection to spark-master/172.19.0.4:7077 after 43 ms (0 ms spent in bootstraps)
+spark-worker-3-1     | 24/12/09 23:14:32 INFO Worker: Successfully registered with master spark://375680454eb5:7077
+airflow-scheduler-1  | 
+airflow-scheduler-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-scheduler-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-scheduler-1  |   ____________       _____________
+airflow-scheduler-1  |  ____    |__( )_________  __/__  /________      __
+airflow-scheduler-1  | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+airflow-scheduler-1  | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+airflow-scheduler-1  |  _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+airflow-scheduler-1  | [2024-12-09T23:15:12.854+0000] {_client.py:1026} INFO - HTTP Request: GET https://apacheairflow.gateway.scarf.sh/scheduler?version=2.10.3&python_version=3.12&platform=Linux&arch=x86_64&database=postgresql&db_version=13.18&executor=CeleryExecutor "HTTP/1.1 200 OK"
+airflow-scheduler-1  | [2024-12-09T23:15:15.750+0000] {executor_loader.py:254} INFO - Loaded executor: CeleryExecutor
+airflow-scheduler-1  | [2024-12-09T23:15:15.837+0000] {scheduler_job_runner.py:938} INFO - Starting the scheduler
+airflow-scheduler-1  | [2024-12-09T23:15:15.839+0000] {scheduler_job_runner.py:945} INFO - Processing each file at most -1 times
+airflow-scheduler-1  | [2024-12-09T23:15:15.844+0000] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 62
+airflow-scheduler-1  | [2024-12-09T23:15:15.847+0000] {scheduler_job_runner.py:1852} INFO - Adopting or resetting orphaned tasks for active dag runs
+airflow-scheduler-1  | [2024-12-09T23:15:15.851+0000] {settings.py:63} INFO - Configured default timezone UTC
+airflow-scheduler-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-scheduler-1  | 127.0.0.1 - - [09/Dec/2024 23:15:16] "GET /health HTTP/1.1" 200 -
+airflow-scheduler-1  | 127.0.0.1 - - [09/Dec/2024 23:15:46] "GET /health HTTP/1.1" 200 -
+airflow-scheduler-1  | 127.0.0.1 - - [09/Dec/2024 23:16:16] "GET /health HTTP/1.1" 200 -
+airflow-webserver-1  | 
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-webserver-1  | [2024-12-09T23:15:03.085+0000] {configuration.py:2111} INFO - Creating new FAB webserver config file in: /opt/airflow/webserver_config.py
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:558 FutureWarning: section/key [webserver/update_fab_perms] has been deprecated, you should use[fab/update_fab_perms] instead. Please update your `conf.get*` call to use the new name
+airflow-webserver-1  | [2024-12-09 23:15:11 +0000] [27] [INFO] Starting gunicorn 23.0.0
+airflow-webserver-1  | [2024-12-09T23:15:21.335+0000] {providers_manager.py:287} INFO - Optional provider feature disabled when importing 'airflow.providers.google.leveldb.hooks.leveldb.LevelDBHook' from 'apache-airflow-providers-google' package
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/batch/models/_models_py3.py:4839 SyntaxWarning: invalid escape sequence '\s'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:175 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:222 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1151 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1248 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1271 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1406 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1439 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1495 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1683 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:1750 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2025 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2110 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2407 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:2468 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:3987 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4096 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4127 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4186 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4225 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:4275 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5209 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5265 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5302 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:5358 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6437 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6497 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6538 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:6588 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7023 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7096 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7267 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7333 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7378 SyntaxWarning: invalid escape sequence '\d'
+createbuckets-1      | Added `myminio` successfully.
+createbuckets-1      | Bucket created successfully `myminio/movielens`.
+createbuckets-1      | mc: Please use 'mc anonymous'
+airflow-triggerer-1  | 
+airflow-triggerer-1  | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-triggerer-1  |   ____________       _____________
+airflow-triggerer-1  |  ____    |__( )_________  __/__  /________      __
+airflow-triggerer-1  | ____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+airflow-triggerer-1  | ___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+airflow-triggerer-1  |  _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+airflow-triggerer-1  | [2024-12-09 23:15:03 +0000] [23] [INFO] Starting gunicorn 23.0.0
+airflow-triggerer-1  | [2024-12-09 23:15:03 +0000] [23] [INFO] Listening at: http://[::]:8794 (23)
+airflow-triggerer-1  | [2024-12-09 23:15:03 +0000] [23] [INFO] Using worker: sync
+airflow-triggerer-1  | [2024-12-09 23:15:03 +0000] [24] [INFO] Booting worker with pid: 24
+airflow-triggerer-1  | [2024-12-09 23:15:03 +0000] [25] [INFO] Booting worker with pid: 25
+airflow-triggerer-1  | [2024-12-09T23:15:06.248+0000] {triggerer_job_runner.py:181} INFO - Setting up TriggererHandlerWrapper with handler <FileTaskHandler (NOTSET)>
+airflow-triggerer-1  | [2024-12-09T23:15:06.250+0000] {triggerer_job_runner.py:237} INFO - Setting up logging queue listener with handlers [<RedirectStdHandler <stdout> (NOTSET)>, <TriggererHandlerWrapper (NOTSET)>]
+airflow-triggerer-1  | [2024-12-09T23:15:06.257+0000] {triggerer_job_runner.py:338} INFO - Starting the triggerer
+airflow-triggerer-1  | [2024-12-09T23:16:07.009+0000] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.21 [0m[38;5;2mINFO [0m ==> 
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.21 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami spark container[0m
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.22 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.22 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.22 [0m[38;5;2mINFO [0m ==> 
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.23 [0m[38;5;2mINFO [0m ==> ** Starting Spark setup **
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.26 [0m[38;5;2mINFO [0m ==> Generating Spark configuration file...
+spark-worker-1-1     | find: '/docker-entrypoint-initdb.d/': No such file or directory
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.27 [0m[38;5;2mINFO [0m ==> No custom scripts in /docker-entrypoint-initdb.d
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.27 [0m[38;5;2mINFO [0m ==> ** Spark setup finished! **
+spark-worker-1-1     | 
+spark-worker-1-1     | [38;5;6mspark [38;5;5m23:14:29.29 [0m[38;5;2mINFO [0m ==> ** Starting Spark in worker mode **
+spark-worker-1-1     | starting org.apache.spark.deploy.worker.Worker, logging to /opt/bitnami/spark/logs/spark--org.apache.spark.deploy.worker.Worker-1-49ba8e1aa60a.out
+spark-worker-1-1     | Spark Command: /opt/bitnami/java/bin/java -cp /opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://spark-master:7077
+spark-worker-1-1     | ========================================
+spark-worker-1-1     | Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+spark-worker-1-1     | 24/12/09 23:14:31 INFO Worker: Started daemon with process name: 35@49ba8e1aa60a
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for TERM
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for HUP
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for INT
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls to: spark
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls to: spark
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls groups to: 
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls groups to: 
+spark-worker-1-1     | 24/12/09 23:14:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+spark-worker-1-1     | 24/12/09 23:14:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Utils: Successfully started service 'sparkWorker' on port 35193.
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Worker decommissioning not enabled.
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Starting Spark worker 172.19.0.8:35193 with 12 cores, 2.0 GiB RAM
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Running Spark version 3.5.0
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Spark home: /opt/bitnami/spark
+spark-worker-1-1     | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-1-1     | 24/12/09 23:14:32 INFO ResourceUtils: No custom resources configured for spark.worker.
+spark-worker-1-1     | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-1-1     | 24/12/09 23:14:32 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+spark-worker-1-1     | 24/12/09 23:14:32 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://49ba8e1aa60a:8081
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Connecting to master spark-master:7077...
+spark-worker-1-1     | 24/12/09 23:14:32 INFO TransportClientFactory: Successfully created connection to spark-master/172.19.0.4:7077 after 29 ms (0 ms spent in bootstraps)
+spark-worker-1-1     | 24/12/09 23:14:32 INFO Worker: Successfully registered with master spark://375680454eb5:7077
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:7440 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8222 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8282 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8322 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:8368 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:9475 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:9531 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10532 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10588 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10625 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10680 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10923 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:10979 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11016 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11072 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11231 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11282 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11420 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:11477 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12300 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12383 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12439 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:12524 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13019 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13090 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13139 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13200 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13886 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13941 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:13977 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14026 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14318 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14388 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14436 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14492 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14744 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:14810 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15415 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15482 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15527 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15578 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15897 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:15953 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16617 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16674 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16712 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16780 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16932 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:16988 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17025 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17090 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17228 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:17284 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20234 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20289 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20862 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20921 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:20960 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21014 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21316 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21377 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21418 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21478 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21612 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:21668 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22155 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22218 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22559 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22626 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22671 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:22722 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23061 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23128 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23173 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23224 SyntaxWarning: invalid escape sequence '\d'
+spark-master-1    | [38;5;6mspark [38;5;5m23:14:28.33 [0m[38;5;2mINFO [0m ==> 
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.34 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami spark container[0m
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.34 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.34 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.34 [0m[38;5;2mINFO [0m ==> 
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.36 [0m[38;5;2mINFO [0m ==> ** Starting Spark setup **
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.37 [0m[38;5;2mINFO [0m ==> Generating Spark configuration file...
+spark-master-1       | find: '/docker-entrypoint-initdb.d/': No such file or directory
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.38 [0m[38;5;2mINFO [0m ==> No custom scripts in /docker-entrypoint-initdb.d
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.38 [0m[38;5;2mINFO [0m ==> ** Spark setup finished! **
+spark-master-1       | 
+spark-master-1       | [38;5;6mspark [38;5;5m23:14:28.40 [0m[38;5;2mINFO [0m ==> ** Starting Spark in master mode **
+spark-master-1       | starting org.apache.spark.deploy.master.Master, logging to /opt/bitnami/spark/logs/spark--org.apache.spark.deploy.master.Master-1-375680454eb5.out
+spark-master-1       | Spark Command: /opt/bitnami/java/bin/java -cp /opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host 375680454eb5 --port 7077 --webui-port 9080
+spark-master-1       | ========================================
+spark-master-1       | Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+spark-master-1       | 24/12/09 23:14:29 INFO Master: Started daemon with process name: 37@375680454eb5
+spark-master-1       | 24/12/09 23:14:30 INFO SignalUtils: Registering signal handler for TERM
+spark-master-1       | 24/12/09 23:14:30 INFO SignalUtils: Registering signal handler for HUP
+spark-master-1       | 24/12/09 23:14:30 INFO SignalUtils: Registering signal handler for INT
+spark-master-1       | 24/12/09 23:14:30 INFO SecurityManager: Changing view acls to: spark
+spark-master-1       | 24/12/09 23:14:30 INFO SecurityManager: Changing modify acls to: spark
+spark-master-1       | 24/12/09 23:14:30 INFO SecurityManager: Changing view acls groups to: 
+spark-master-1       | 24/12/09 23:14:30 INFO SecurityManager: Changing modify acls groups to: 
+spark-master-1       | 24/12/09 23:14:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+spark-master-1       | 24/12/09 23:14:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark-master-1       | 24/12/09 23:14:31 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+spark-master-1       | 24/12/09 23:14:31 INFO Master: Starting Spark master at spark://375680454eb5:7077
+spark-master-1       | 24/12/09 23:14:31 INFO Master: Running Spark version 3.5.0
+spark-master-1       | 24/12/09 23:14:31 INFO JettyUtils: Start Jetty 0.0.0.0:9080 for MasterUI
+spark-master-1       | 24/12/09 23:14:31 INFO Utils: Successfully started service 'MasterUI' on port 9080.
+spark-master-1       | 24/12/09 23:14:31 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://375680454eb5:9080
+spark-master-1       | 24/12/09 23:14:31 INFO Master: I have been elected leader! New state: ALIVE
+spark-master-1       | 24/12/09 23:14:32 INFO Master: Registering worker 172.19.0.6:38897 with 12 cores, 2.0 GiB RAM
+spark-master-1       | 24/12/09 23:14:32 INFO Master: Registering worker 172.19.0.7:45823 with 12 cores, 2.0 GiB RAM
+spark-master-1       | 24/12/09 23:14:32 INFO Master: Registering worker 172.19.0.8:35193 with 12 cores, 2.0 GiB RAM
+minio-1           | MinIO Object Storage Server
+minio-1              | Copyright: 2015-2024 MinIO, Inc.
+minio-1              | License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+minio-1              | Version: RELEASE.2024-11-07T00-52-20Z (go1.23.3 linux/amd64)
+minio-1              | 
+minio-1              | API: http://172.19.0.5:9000  http://127.0.0.1:9000 
+minio-1              | WebUI: http://172.19.0.5:9001 http://127.0.0.1:9001  
+minio-1              | 
+minio-1              | Docs: https://docs.min.io
+airflow-init-1       | 
+airflow-init-1       | [1;33mWARNING!!!: AIRFLOW_UID not set![0m
+airflow-init-1       | If you are on Linux, you SHOULD follow the instructions below to set 
+airflow-init-1       | AIRFLOW_UID environment variable, otherwise files will be owned by root.
+airflow-init-1       | For other operating systems you can get rid of the warning with manually created .env file:
+airflow-init-1       |     See: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#setting-the-right-airflow-user
+airflow-init-1       | 
+airflow-init-1       | The container is run as root user. For security, consider using a regular user account.
+airflow-init-1       | 
+airflow-init-1       | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-init-1       | DB: postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-init-1       | Performing upgrade to the metadata database postgresql+psycopg2://airflow:***@postgres/airflow
+airflow-init-1       | [2024-12-09T23:14:43.298+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-init-1       | [2024-12-09T23:14:43.299+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-init-1       | [2024-12-09T23:14:43.303+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+airflow-init-1       | [2024-12-09T23:14:43.303+0000] {migration.py:210} INFO - Will assume transactional DDL.
+airflow-init-1       | [2024-12-09T23:14:43.304+0000] {db.py:1675} INFO - Creating tables
+airflow-init-1       | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-init-1       | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-init-1       | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+airflow-init-1       | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+airflow-init-1       | Database migrating done!
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.03 [0m[38;5;2mINFO [0m ==> 
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.04 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami spark container[0m
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.04 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.04 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.04 [0m[38;5;2mINFO [0m ==> 
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.05 [0m[38;5;2mINFO [0m ==> ** Starting Spark setup **
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.06 [0m[38;5;2mINFO [0m ==> Generating Spark configuration file...
+spark-worker-2-1     | find: '/docker-entrypoint-initdb.d/': No such file or directory
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.07 [0m[38;5;2mINFO [0m ==> No custom scripts in /docker-entrypoint-initdb.d
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.07 [0m[38;5;2mINFO [0m ==> ** Spark setup finished! **
+spark-worker-2-1     | 
+spark-worker-2-1     | [38;5;6mspark [38;5;5m23:14:29.08 [0m[38;5;2mINFO [0m ==> ** Starting Spark in worker mode **
+spark-worker-2-1     | starting org.apache.spark.deploy.worker.Worker, logging to /opt/bitnami/spark/logs/spark--org.apache.spark.deploy.worker.Worker-1-7fc154ed886b.out
+spark-worker-2-1     | Spark Command: /opt/bitnami/java/bin/java -cp /opt/bitnami/spark/conf/:/opt/bitnami/spark/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://spark-master:7077
+spark-worker-2-1     | ========================================
+spark-worker-2-1     | Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+spark-worker-2-1     | 24/12/09 23:14:31 INFO Worker: Started daemon with process name: 35@7fc154ed886b
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for TERM
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for HUP
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SignalUtils: Registering signal handler for INT
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls to: spark
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls to: spark
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing view acls groups to: 
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SecurityManager: Changing modify acls groups to: 
+spark-worker-2-1     | 24/12/09 23:14:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+spark-worker-2-1     | 24/12/09 23:14:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Utils: Successfully started service 'sparkWorker' on port 45823.
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Worker decommissioning not enabled.
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Starting Spark worker 172.19.0.7:45823 with 12 cores, 2.0 GiB RAM
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Running Spark version 3.5.0
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Spark home: /opt/bitnami/spark
+spark-worker-2-1     | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-2-1     | 24/12/09 23:14:32 INFO ResourceUtils: No custom resources configured for spark.worker.
+spark-worker-2-1     | 24/12/09 23:14:32 INFO ResourceUtils: ==============================================================
+spark-worker-2-1     | 24/12/09 23:14:32 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+spark-worker-2-1     | 24/12/09 23:14:32 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://7fc154ed886b:8081
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Connecting to master spark-master:7077...
+spark-worker-2-1     | 24/12/09 23:14:32 INFO TransportClientFactory: Successfully created connection to spark-master/172.19.0.4:7077 after 37 ms (0 ms spent in bootstraps)
+spark-worker-2-1     | 24/12/09 23:14:32 INFO Worker: Successfully registered with master spark://375680454eb5:7077
+airflow-init-1       | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-init-1       | /home/airflow/.local/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+airflow-init-1       | airflow already exist in the db
+airflow-init-1       | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-init-1       | 2.10.3
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23511 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23567 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:23968 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:24018 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25343 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25398 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25434 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:25485 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:26723 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:26779 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27121 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27177 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27461 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:27517 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28053 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28109 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28536 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28592 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28932 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:28982 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:30727 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:30783 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31296 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31344 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31617 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:31673 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32120 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32176 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32339 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32395 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32432 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:32487 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33502 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33558 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33869 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33928 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:33967 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34021 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34739 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34806 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34852 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:34908 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:36915 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:36971 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37417 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37473 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37845 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:37901 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38208 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38264 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38301 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38351 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38690 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:38758 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39141 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39192 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39419 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39487 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39683 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:39738 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:40019 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:40084 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41138 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41196 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41359 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41415 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41452 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41507 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41875 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:41947 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42441 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42497 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42534 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42590 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42627 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:42692 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43020 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43079 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43118 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43168 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43514 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43573 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43612 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43666 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:43989 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44045 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44386 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:44442 SyntaxWarning: invalid escape sequence '\d'
+redis-1              | 1:C 09 Dec 2024 23:14:28.030 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1              | 1:C 09 Dec 2024 23:14:28.030 * Redis version=7.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1              | 1:C 09 Dec 2024 23:14:28.030 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1              | 1:M 09 Dec 2024 23:14:28.031 * monotonic clock: POSIX clock_gettime
+redis-1              | 1:M 09 Dec 2024 23:14:28.031 * Running mode=standalone, port=6379.
+redis-1              | 1:M 09 Dec 2024 23:14:28.031 * Server initialized
+redis-1              | 1:M 09 Dec 2024 23:14:28.031 * Ready to accept connections tcp
+postgres-1           | 
+postgres-1           | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-1           | 
+postgres-1           | 2024-12-09 23:14:28.534 UTC [1] LOG:  starting PostgreSQL 13.18 (Debian 13.18-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+postgres-1           | 2024-12-09 23:14:28.534 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1           | 2024-12-09 23:14:28.534 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1           | 2024-12-09 23:14:28.551 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1           | 2024-12-09 23:14:28.565 UTC [27] LOG:  database system was shut down at 2024-12-09 23:11:11 UTC
+postgres-1           | 2024-12-09 23:14:28.581 UTC [1] LOG:  database system is ready to accept connections
+airflow-worker-1     | 
+airflow-worker-1     | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-worker-1     | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-worker-1     | BACKEND=redis
+airflow-worker-1     | DB_HOST=redis
+airflow-worker-1     | DB_PORT=6379
+airflow-worker-1     | 
+airflow-worker-1     | /home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py:859 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+airflow-worker-1     | [2024-12-09T23:15:10.576+0000] {configuration.py:2111} INFO - Creating new FAB webserver config file in: /opt/airflow/webserver_config.py
+airflow-worker-1     | [2024-12-09 23:15:11 +0000] [34] [INFO] Starting gunicorn 23.0.0
+airflow-worker-1     | [2024-12-09 23:15:11 +0000] [34] [INFO] Listening at: http://[::]:8793 (34)
+airflow-worker-1     | [2024-12-09 23:15:11 +0000] [34] [INFO] Using worker: sync
+airflow-worker-1     | [2024-12-09 23:15:11 +0000] [35] [INFO] Booting worker with pid: 35
+airflow-worker-1     | [2024-12-09 23:15:11 +0000] [36] [INFO] Booting worker with pid: 36
+airflow-worker-1     |  
+airflow-worker-1     |  -------------- celery@641d647c5428 v5.4.0 (opalescent)
+airflow-worker-1     | --- ***** ----- 
+airflow-worker-1     | -- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2024-12-09 23:15:12
+airflow-worker-1     | - *** --- * --- 
+airflow-worker-1     | - ** ---------- [config]
+airflow-worker-1     | - ** ---------- .> app:         airflow.providers.celery.executors.celery_executor:0x7fa8068926c0
+airflow-worker-1     | - ** ---------- .> transport:   redis://redis:6379/0
+airflow-worker-1     | - ** ---------- .> results:     postgresql://airflow:**@postgres/airflow
+airflow-worker-1     | - *** --- * --- .> concurrency: 16 (prefork)
+airflow-worker-1     | -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+airflow-worker-1     | --- ***** ----- 
+airflow-worker-1     |  -------------- [queues]
+airflow-worker-1     |                 .> default          exchange=default(direct) key=default
+airflow-worker-1     |                 
+airflow-worker-1     | 
+airflow-worker-1     | [tasks]
+airflow-worker-1     |   . airflow.providers.celery.executors.celery_executor_utils.execute_command
+airflow-worker-1     | 
+airflow-worker-1     | [2024-12-09 23:15:15,439: WARNING/MainProcess] /home/airflow/.local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+airflow-worker-1     | whether broker connection retries are made during startup in Celery 6.0 and above.
+airflow-worker-1     | If you wish to retain the existing behavior for retrying connections on startup,
+airflow-worker-1     | you should set broker_connection_retry_on_startup to True.
+airflow-worker-1     |   warnings.warn(
+airflow-worker-1     | 
+airflow-worker-1     | [2024-12-09 23:15:15,447: INFO/MainProcess] Connected to redis://redis:6379/0
+airflow-worker-1     | [2024-12-09 23:15:15,449: WARNING/MainProcess] /home/airflow/.local/lib/python3.12/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+airflow-worker-1     | whether broker connection retries are made during startup in Celery 6.0 and above.
+airflow-worker-1     | If you wish to retain the existing behavior for retrying connections on startup,
+airflow-worker-1     | you should set broker_connection_retry_on_startup to True.
+airflow-worker-1     |   warnings.warn(
+airflow-worker-1     | 
+airflow-worker-1     | [2024-12-09 23:15:15,455: INFO/MainProcess] mingle: searching for neighbors
+airflow-worker-1     | [2024-12-09 23:15:16,466: INFO/MainProcess] mingle: all alone
+airflow-worker-1     | [2024-12-09 23:15:16,501: INFO/MainProcess] celery@641d647c5428 ready.
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45003 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45058 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45444 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:45499 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46042 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46098 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46702 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:46758 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47000 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47050 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47648 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:47704 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48113 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48190 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48244 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:48321 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49499 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49555 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:49932 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50002 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50052 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50107 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50379 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50449 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50499 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50554 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50590 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50660 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50710 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:50770 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51046 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51116 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51166 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51226 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51485 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51540 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51787 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51851 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51895 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:51958 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52212 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52275 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52463 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:52532 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53040 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53111 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53334 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53407 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:53961 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54059 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54322 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:54398 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55022 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55078 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55310 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:55365 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56196 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56248 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56508 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:56564 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57087 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57147 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57187 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57237 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57560 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57620 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57660 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:57710 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59106 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59162 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59316 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59396 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59452 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59535 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59594 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59677 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59733 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:59818 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60639 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60722 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60778 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:60863 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61167 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61250 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61306 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61387 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61696 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61752 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61954 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:61992 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:62660 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:62715 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:63882 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:63946 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64582 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64674 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:64940 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65014 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65117 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65199 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65385 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65441 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65874 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:65950 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66003 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66087 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66686 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66779 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66918 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:66964 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:67735 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:67791 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68043 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68097 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68532 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/azure/synapse/artifacts/models/_models_py3.py:68588 SyntaxWarning: invalid escape sequence '\d'
+airflow-webserver-1  | /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068 SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [27] [INFO] Listening at: http://0.0.0.0:8080 (27)
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [27] [INFO] Using worker: sync
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [72] [INFO] Booting worker with pid: 72
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [73] [INFO] Booting worker with pid: 73
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [74] [INFO] Booting worker with pid: 74
+airflow-webserver-1  | [2024-12-09 23:15:27 +0000] [75] [INFO] Booting worker with pid: 75
+airflow-webserver-1  | 127.0.0.1 - - [09/Dec/2024:23:15:51 +0000] "GET /health HTTP/1.1" 200 318 "-" "curl/7.88.1"
+airflow-webserver-1  | 127.0.0.1 - - [09/Dec/2024:23:16:21 +0000] "GET /health HTTP/1.1" 200 318 "-" "curl/7.88.1"
